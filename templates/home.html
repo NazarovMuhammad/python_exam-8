@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой HTML Шаблон с CSS</title>
+    {%load static%}
+    <style>
+        *{
+            margin: 0px;
+            
+        }
+        nav {
+             display: flex; 
+             width: 100%;
+             gap: 100px; 
+             background-color: black; 
+             padding: 7px 0px 7px 0px;   
+
+        }
+         
+        nav a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            width: 100%;
+        }
+        header img{
+            width: 100%;
+            height: 100vh;
+        }
+        main{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 70%;
+            margin: auto;
+        }
+        main h1{
+            text-align: center;
+        }
+        main h4{
+            text-align: center;
+        }
+        main p{
+            text-align: center;
+        }
+        .contact{
+            width: 85%;
+            margin: auto;
+        }
+        .contact h2{
+            text-align: center
+        }
+        .contact h5{
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        .contact1{
+            display: flex;
+            margin-left: 170px;
+        }
+        .cont1{
+            width: 40%;
+        }
+        .cont{
+            width: 40%;
+        }
+        footer{
+            width: 100%;
+        }
+        footer img{
+            width: 100%;
+            height: 100vh;
+            margin-top: 90px;
+            margin-bottom: 40px;
+        }
+        footer p{
+            text-align: center;
+
+        }
+        footer p a{
+            margin-top: 30px;
+            margin-bottom: 50px;
+            text-decoration: none;
+            color: black;
+        }
+                
+    </style>
+</head>
+<body>
+   <nav>
+    <a href="home">Home</a>
+    <a href="about">About</a>
+    <a href="contact">contact</a>
+   </nav>
+   <header>
+    <img src="https://www.w3schools.com/w3images/la.jpg" alt="">
+   </header>
+   <main>
+    <h1>THE BAND</h1>
+    <h4>We love music</h4>
+    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   </main>
+   <div class="contact">
+    <h2>CONTACT</h1>
+    <h5>Fan? Drop a note!</h5>
+    <div class="contact1">
+    <div class="cont1">
+        <h4>Chicago, US</h4>
+        <h4> Phone: +00 151515</h2>
+        <h4>Email: mail@mail.com</h4>
+    </div>    
+     <div class="cont">   
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder=" Email"> 
+        <input type="text" placeholder="Message"> <br>
+        <button>Send</button>
+    </form>
+</div>
+</div>
+   </div>
+   <footer>
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+    <p>Power by <a href="">w3schools</a></p>
+   </footer>
+</body>
+</html>
